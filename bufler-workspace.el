@@ -245,6 +245,8 @@ Completion is done in steps when descending into branches."
 ;; unnecessarily).
 
 ;;;###autoload
+(require 'cl-macs)
+;;;###autoload
 (cl-eval-when (load)
   (when (require 'tab-bar nil t)
     (require 'bufler-workspace-tabs)))
